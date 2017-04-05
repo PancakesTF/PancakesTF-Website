@@ -1,0 +1,163 @@
+body {
+    padding-top: 70px;
+    text-shadow: 0px 0px 6px #000;
+    height: 100%;
+}
+
+.header-img {
+	border-radius: 5px;
+	height: 205px;
+}
+
+.header-container {
+	margin-top: 20px;
+}
+
+.header-h1 {
+	margin-top: 50px;
+}
+
+.header-margin {
+	margin-left: 45px;
+}
+
+.glyphicon, .fa {
+    margin-right: 10px;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.ri {
+    margin-right: 20px;
+}
+
+.brand {
+    margin-top: 10px;
+    margin-right: 1rem;
+    width: 43px;
+}
+
+#donate-btn {
+	color: #FFFFFF;
+	font-size: 16px;
+	background-color: #2CB3FF;
+	border: 1px solid #2CB3FF;
+	padding-top: 7px;
+	padding-bottom: 8px;
+    margin-top: 11px;
+    margin-right: 15px;
+}
+
+#donate-btn:hover {
+	background-color: #1972a3;
+	border: 1px solid #1972a3;
+}
+
+#donate-btn:active {
+	background-color: #393939;
+	border: 1px solid #393939;
+}
+
+.trade {
+    margin-top: 2rem;
+    background-color: #3C9E3E;
+}
+
+.trade:hover {
+    background-color: #2c742d;	
+}
+
+.trade:active {
+    background-color: #393939;
+}
+
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 120px auto;
+    padding: 20px;
+    background: #3a1f3e url('../images/support.png') no-repeat center; background-size: cover;
+    border-radius: 5px;
+    width: 700px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    border: 3px solid #F4A9FF;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.popup .close:hover {
+    color: #fff;
+}
+
+hr {
+	color:"#777";
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 70%;
+    }
+}
+
+.resources {
+    padding: 10px 0;
+}
+
+table {
+    margin-top: 10px;
+}
+
+th {
+    color: #818181;
+}
+
+.footer, .footer a {
+    text-align: center;
+    color: #636363;
+    font-size: 13px;
+    margin-bottom: 2rem;
+}

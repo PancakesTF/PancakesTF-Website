@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Welcome to Live's House of Pancakes! We're an online gaming community on Steam.">
+        <title>Game Servers :: Pancakes.TF</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+		<style>
+			h3, .top-margin {
+				margin-top: 40px;
+			}
+			
+			.game-icon {
+				height: 40px;
+				margin-right: 20px;
+				border-radius: 5px;
+			}
+			
+			#joingame {
+				color: #fff;
+				font-size: 12px;
+				font-weight: normal;
+				background-color: #14783e;
+				padding: 1px 4px;
+				margin-top: -4px;
+			}
+			
+			#devonly {
+				color: #fff;
+				font-size: 12px;
+				font-weight: normal;
+				padding: 1px 4px;
+				margin-top: -4px;
+			}
+			
+			#joingame:hover {
+				background-color:#0b4523;
+			}
+			
+			#joingame:active {
+				background-color:#1d1d1d;
+			}
+			
+			table img {
+				box-shadow: 0 0 5px #000;
+			}
+			
+			.gametracker {
+				width: 340px;
+				height: 19px;
+			}
+            
+            .flags {
+                height: 50px;
+                border-radius: 5px;
+                margin: 10px 0;
+            }
+            
+            .countries {
+                width: 50%;
+            }
+            
+            .region {
+                text-align: center;
+            }
+		</style>
+	</head>
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a href="index.html"><img class="brand" src="images/brand.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="topFixedNavbar1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><span class="fa fa-home" aria-hidden="true"></span>Home</a></li>
+                        <li><a href="http://steamcommunity.com/groups/houseofpancakes/discussions"><span class="fa fa-comments" aria-hidden="true"></span>Discussions</a></li>
+                        <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-book" aria-hidden="true"></span>Resources<span class="caret"></span></a>
+                            <ul class="dropdown-menu resources">
+                                <li><a href="servers.html">Game Servers</a></li>
+                                <li class="divider"></li>
+                                <li><a href="rules.html">Rules & Guidelines</a></li>
+                                <li><a href="admins.html">Administration</a></li>
+                                <li class="divider"></li>
+                                <li><a href="http://bans.pancakes.tf/">Server Bans</a></li>
+                                <li><a href="http://steamcommunity.com/groups/houseofpancakes/discussions/3/">Appellate Forum</a></li>
+                            </ul>
+						</li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-users" aria-hidden="true"></span>Community<span class="caret"></span></a>
+                            <ul class="dropdown-menu resources">
+                                <li><a href="http://steamcommunity.com/groups/houseofpancakes">Steam Group</a></li>
+                                <li><a href="https://discord.gg/Q7hdGat">Discord Server</a></li>
+                                <li><a href="https://www.patreon.com/HouseOfPancakes">Patreon Page</a></li>
+                                <li><a href="https://gaming.youtube.com/c/LivesHouseofPancakes#tab=1">YouTube Channel</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://steamcommunity.com/groups/houseofpancakes" type="button" class="btn btn-sm btn-defult" id="donate-btn"><span class="fa fa-steam" aria-hidden="true"></span><b>Join Steam Group</b></a></li>
+                        <li><a href="#popup1" type="button" class="btn btn-sm btn-defult" id="donate-btn"><b><i class="glyphicon glyphicon-heart" aria-hidden="true"></i>Donate</b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h1>Support the Community!</h1>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>We strive to provide everything as free and open to you as possible.<br>If you enjoy our game servers, please consider donating.</p>                     <p class="text-muted">You may donate with Mann Co. Supply Crate Keys via Steam or money via Patreon.<br>Don't forget to join our Steam Group for server rewards and community events!</p>
+                    <div>
+                        <a class="btn btn-lg btn-default trade" href="https://steamcommunity.com/tradeoffer/new/?partner=22735839&token=S-jFKjfT" style="margin-right:20px" target="_blank" role="button"><b>Send us a trade offer!</b><br><c style="font-size:15px">(opens trade in new window)</c></a>
+                        <a class="btn btn-lg btn-default trade" href="https://www.patreon.com/HouseOfPancakes" target="_blank" role="button"><img style="margin:5px 0" src="images/patreon.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container header-container">
+        	<div class="row">
+        		<div class="col-lg-3">
+        			<img src="images/tub.png" class="header-img">
+				</div>
+				<div class="col-lg-6">
+					<h1 class="header-h1">Official Game Servers</h1>
+					<p class="text-muted">We host game servers in the United States and the European Union.<br>Join our Steam Group for server rewards and community events.</p>
+				</div>
+			</div>
+		</div>
+        <div class="container" style="margin-top: 40px;">
+            <ul class="nav nav-tabs">
+                <li class="active countries"><a class="region" href="#usa" data-toggle="tab"><img src="images/usa.png" class="flags"><br>North American Servers</a></li>
+                <li class="countries"><a class="region" href="#eu" data-toggle="tab"><img src="images/eu.png" class="flags"><br>European Servers</a></li>
+            </ul>
+        </div>
+        <div id="myTabContent" class="tab-content container">
+            <div class="tab-pane fade active in" id="usa">
+                <h3><a href="http://store.steampowered.com/app/440" target="_blank"><img src="images/tf2.png" class="game-icon"></a>Team Fortress 2</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Server Name</th>
+                            <th>GameTracker</th>
+                            <th>IP Address</th>
+                            <th>Connect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: 25fort! 2fooooooort</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27082/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27082/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27082</td>
+                            <td><a href="steam://connect/208.110.72.18:27082" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: 2Fort 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27033/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27033/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27033</td>
+                            <td><a href="steam://connect/208.110.72.18:27033" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: 2Fort Invasion 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27036/" target="_blank"><img src="http://cache.www.gametrac	ker.com/server_info/208.110.72.18:27036/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27036</td>
+                            <td><a href="steam://connect/208.110.72.18:27036" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Achievement Engineer :: FREE ITEMS</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27132/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27132/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27132</td>
+                            <td><a href="steam://connect/208.110.72.18:27132" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Badwater 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27049/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27049/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27049</td>
+                            <td><a href="steam://connect/208.110.72.18:27049" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Cactus Canyon 24/7!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27144/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27144/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27144</td>
+                            <td><a href="steam://connect/208.110.72.18:27144" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Class Warfare</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27138/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27138/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27138</td>
+                            <td><a href="steam://connect/208.110.72.18:27138" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>                        
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Deathmatch DM 24/7 :: FastDL</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27141/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27141/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27141</td>
+                            <td><a href="steam://connect/208.110.72.18:27141" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Deathrun :: Fun!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27026/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27026/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27026</td>
+                            <td><a href="steam://connect/208.110.72.18:27026" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: DeGroot Keep :: Instant!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27064/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27064/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27064</td>
+                            <td><a href="steam://connect/208.110.72.18:27064" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Development Server</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27123/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27123/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27123</td>
+                            <td><a href="steam://connect/208.110.72.18:27123" type="button" class="btn btn-sm btn-defult" id="devonly"><i class="fa fa-lock" aria-hidden="true"></i><b>Devs Only</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Dodgeball :: All Classes!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27095/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27095/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27095</td>
+                            <td><a href="steam://connect/208.110.72.18:27095" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Dogbread Payload Race 24/7!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27149/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27149/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27149</td>
+                            <td><a href="steam://connect/208.110.72.18:27149" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Dustbowl 24/7 :: Instant!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27030/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27030/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27030</td>
+                            <td><a href="steam://connect/208.110.72.18:27030" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Frontier 24/7 :: Instant!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27061/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27061/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27061</td>
+                            <td><a href="steam://connect/208.110.72.18:27061" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Halloween Harvest 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27055/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27055/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27055</td>
+                            <td><a href="steam://connect/208.110.72.18:27055" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Halloween Manor 24/7 :: Spooky!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27067/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27067/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27067</td>
+                            <td><a href="steam://connect/208.110.72.18:27067" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Harvest 24/7 :: Instant!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27052/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27052/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27052</td>
+                            <td><a href="steam://connect/208.110.72.18:27052" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Helltower 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27016/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27016/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27016</td>
+                            <td><a href="steam://connect/208.110.72.18:27016" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Jump Academy Easy :: !noclipme</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27089/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27089/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27089</td>
+                            <td><a href="steam://connect/208.110.72.18:27089" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Jump Academy Easy + Medium :: !noclipme</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27114/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27114/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27114</td>
+                            <td><a href="steam://connect/208.110.72.18:27114" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Mann vs Machine 666 ONLY :: 10 Players!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27120/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27120/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27120</td>
+                            <td><a href="steam://connect/208.110.72.18:27120" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Mann vs Machine MVM :: 10 Players!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27117/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27117/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27117</td>
+                            <td><a href="steam://connect/208.110.72.18:27117" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: MGE Training</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27092/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27092/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27092</td>
+                            <td><a href="steam://connect/208.110.72.18:27092" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Probed 24/7 :: Alien Invasion!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27043/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27043/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27043</td>
+                            <td><a href="steam://connect/208.110.72.18:27043" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Randomizer 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27108/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27108/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27108</td>
+                            <td><a href="steam://connect/208.110.72.18:27108" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Regular Maps #1 :: No Downloads!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27098/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27098/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27098</td>
+                            <td><a href="steam://connect/208.110.72.18:27098" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Regular Maps #2 :: No Downloads!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27104/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27104/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27104</td>
+                            <td><a href="steam://connect/208.110.72.18:27104" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Sawmill 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27085/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27085/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27085</td>
+                            <td><a href="steam://connect/208.110.72.18:27085" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Suijin 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27058/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27058/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27058</td>
+                            <td><a href="steam://connect/208.110.72.18:27058" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Trading Custom Map! :: FREE ITEMS</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27015/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27015/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27015</td>
+                            <td><a href="steam://connect/208.110.72.18:27015" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Trading Minecraft :: FREE ITEMS</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27135/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27135/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27135</td>
+                            <td><a href="steam://connect/208.110.72.18:27135" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Trading Plaza :: FREE ITEMS - !givemeall</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27129/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27129/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27129</td>
+                            <td><a href="steam://connect/208.110.72.18:27129" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Twisted 2Fort!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27039/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27039/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27039</td>
+                            <td><a href="steam://connect/208.110.72.18:27039" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Upward 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27046/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27046/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27046</td>
+                            <td><a href="steam://connect/208.110.72.18:27046" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Warioware :: Fun Mini-Games!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27079/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27079/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27079</td>
+                            <td><a href="steam://connect/208.110.72.18:27079" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Watergate 24/7 :: Alien Invasion!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27070/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27070/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27070</td>
+                            <td><a href="steam://connect/208.110.72.18:27070" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: USA :: Workshop Maps!</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27111/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27111/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27111</td>
+                            <td><a href="steam://connect/208.110.72.18:27111" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3><a href="http://store.steampowered.com/app/730" target="_blank"><img src="images/csgo.png" class="game-icon"></a>Counter-Strike: Global Offensive</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Server Name</th>
+                            <th>GameTracker</th>
+                            <th>IP Address</th>
+                            <th>Connect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pancakes.tf | FFA PISTOLS ONLY | 128 Tick [US]</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27076/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27076/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27076</td>
+                            <td><a href="steam://connect/208.110.72.18:27076" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.tf | IDLE | NO KILL [US]</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27125/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27125/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27125</td>
+                            <td><a href="steam://connect/208.110.72.18:27125" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3><a href="http://store.steampowered.com/app/4000" target="_blank"><img src="images/gmod.png" class="game-icon"></a>Garry's Mod</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Server Name</th>
+                            <th>GameTracker</th>
+                            <th>IP Address</th>
+                            <th>Connect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pancakes.tf | STOP IT SLENDER! [US]</td>
+                            <td><a href="http://www.gametracker.com/server_info/208.110.72.18:27017/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/208.110.72.18:27017/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>208.110.72.18:27017</td>
+                            <td><a href="steam://connect/208.110.72.18:27017" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="eu">
+                <h3><a href="http://store.steampowered.com/app/440" target="_blank"><img src="images/tf2.png" class="game-icon"></a>Team Fortress 2</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Server Name</th>
+                            <th>GameTracker</th>
+                            <th>IP Address</th>
+                            <th>Connect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: 2Fort 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27015/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27015/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27015</td>
+                            <td><a href="steam://connect/163.172.108.86:27015" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: 2Fort Invasion 24/7 :: Aliens!</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27016/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27016/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27016</td>
+                            <td><a href="steam://connect/163.172.108.86:27016" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: Achievement Engineer :: FREE ITEMS</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27037/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27037/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27037</td>
+                            <td><a href="steam://connect/163.172.108.86:27037" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: Badwater 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27019/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27019/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27019</td>
+                            <td><a href="steam://connect/163.172.108.86:27019" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: Borneo 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27022/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27022/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27022</td>
+                            <td><a href="steam://connect/163.172.108.86:27022" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: Cactus Canyon 24/7!</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27040/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27040/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27040</td>
+                            <td><a href="steam://connect/163.172.108.86:27040" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: Class Warfare!</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27031/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27031/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27031</td>
+                            <td><a href="steam://connect/163.172.108.86:27031" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: DeGroot Keep 24/7</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27025/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27025/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27025</td>
+                            <td><a href="steam://connect/163.172.108.86:27025" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: Dogbread Payload Race 24/7!</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27050/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27050/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27050</td>
+                            <td><a href="steam://connect/163.172.108.86:27050" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: Jump Academy Easy :: !noclipme</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27028/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27028/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27028</td>
+                            <td><a href="steam://connect/163.172.108.86:27028" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: Mann vs Machine MVM</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27046/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27046/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27046</td>
+                            <td><a href="steam://connect/163.172.108.86:27046" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: MGE Training</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27043/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27043/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27043</td>
+                            <td><a href="steam://connect/163.172.108.86:27043" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: Trading Plaza :: FREE ITEMS - !givemeall</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27034/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27034/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27034</td>
+                            <td><a href="steam://connect/163.172.108.86:27034" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pancakes.TF :: EU :: Workshop Maps!</td>
+                            <td><a href="http://www.gametracker.com/server_info/163.172.108.86:27053/" target="_blank"><img src="http://cache.www.gametracker.com/server_info/163.172.108.86:27053/b_350_20_692108_381007_FFFFFF_000000.png" class="gametracker" alt=""/></a></td>
+                            <td>163.172.108.86:27053</td>
+                            <td><a href="steam://connect/163.172.108.86:27053" type="button" class="btn btn-sm btn-defult" id="joingame"><i class="fa fa-sign-in" aria-hidden="true"></i><b>Join Game</b></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+		<div class="container footer">
+			<hr>
+			<p>&copy; 2017 Live's House of Pancakes | Free Vector Graphics by <a href="http://vecteezy.com" target="_blank">vecteezy.com</a> | Powered by <a href="http://store.steampowered.com/" target="_blank">Steam</a></p>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
